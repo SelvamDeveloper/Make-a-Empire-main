@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/* scroll bar  */
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+/* navbar style  */
+
+nav{
+    width: 100%;
+    height: 100%;
+    padding: 15px 5%;
+    background-color:#252525;
+    display: flex;
+    justify-content: space-between;
+    z-index: 111;
+}
+nav .menu ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+}
+.logo{
+    display: flex;
+    cursor: pointer;
+}
+.logo h1{
+    font-size: 30px;
+    margin: 0;
+    color: #ffff;
+}
+.logo p{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 8px;
+    letter-spacing: 5px;
+    margin-top: -4px;
+}
+nav img{
+    width: 58px;
+    margin-right: 10px;
+}
+nav .menu{
+    margin: auto 0;
+}
+nav .menu ul a{
+    margin: 0 10px;
+
+}
+nav .menu ul li{
+    transition: 1s;
+    width: 100%;
+    padding: 8px;
+    border-radius: 25px;
+}
+.menu ul a .active{
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    width: 150px;
+    border-radius: 25px;
+    color: #252525;
+}
+.menu ul a .active:hover{
+    margin: 0;
+    width: 150px;
+    color: white;
+    
+}
+
+.menu ul a li:hover{
+    color: #252525;
+    margin: 0 10px;
+    width: 100%;
+    background-color:  #00ffff;
+}
