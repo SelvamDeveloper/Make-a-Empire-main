@@ -39,6 +39,9 @@ nav .menu ul{
     transition: 1s;
 
 }
+.logo{
+    display: flex;
+}
 .logo h1{
     font-size: 30px;
     margin: 0;
@@ -50,6 +53,10 @@ nav .menu ul{
     font-size: 8px;
     letter-spacing: 5px;
     margin-top: -4px;
+}
+nav img{
+    width: 58px;
+    margin-right: 10px;
 }
 nav .menu{
     margin: auto 0;
