@@ -12,49 +12,83 @@
 
 /* menu icon style  */
 
-.hamburger { position: absolute; left: 50%; top: 50%; }
+/* // .menu-toggleInput */
+.menu-toggleInput {
+	display: none;
+}
 
-.hamburger { cursor: pointer; padding: 10px 35px 16px 0px; }
-.hamburger span, .hamburger span:before, .hamburger span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 35px;
-  background: #225AD5;
-  position: absolute;
-  display: inline-block;
-  content: '';
+/* // .menu-toggleLabel */
+.menu-toggleLabel {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	height: 30px;
+	width: 30px;
+	display: block;
+	cursor: pointer;
+	z-index: 1;
 }
-.hamburger span:before {
-  top: -10px; 
+
+/* // .menu-toggleBar */
+.menu-toggleBar,
+.menu-toggleBar::before,
+.menu-toggleBar::after {
+	height: 2px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-.hamburger span:after {
-  bottom: -10px;
+
+/* // .menu --closed (unchecked) */
+.menu-toggleBar {
+	top: 14px;
+	left: 0;
+	transition: background .2s .3s, box-shadow .2s .3s;
 }
-/*
-#hamburger span, #hamburger span:before, #hamburger span:after {
-  transition: all 200ms ease-in-out;
+
+.menu-toggleBar::before {
+	content: '';
+	top: -8px;
+	left: 0;
+	transition: transform .3s, top .2s .3s;
 }
-*/
-.hamburger span, .hamburger span:before, .hamburger span:after {
--webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-   -moz-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-     -o-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-        transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+
+.menu-toggleBar::after {
+	content: '';
+	top: 8px;
+	left: 0;
+	transition: transform .3s ease-in, top .2s .3s;
 }
-.hamburger.active span {
-  background-color: transparent;
+
+/* // .menu --open (checked) */
+.menu-toggleInput:checked + .menu-toggleLabel .menu-toggleBar {
+	background: transparent;
+	box-shadow: none;
+	transition: background .2s, box-shadow .2s;
 }
-.hamburger.active span:before, .hamburger.active span:after {
-  top: 0;
+
+.menu-toggleInput:checked + .menu-toggleLabel .menu-toggleBar::before {
+	top: 0;
+	transform: rotate(225deg);
+	transition: top .2s, transform .3s .2s;
 }
-.hamburger.active span:before {
-  transform: rotate(45deg);
+
+.menu-toggleInput:checked + .menu-toggleLabel .menu-toggleBar::after {
+	top: 0;
+	transform: rotate(315deg);
+	transition: top .2s, transform .3s .2s ease-out;
 }
-.hamburger.active span:after {
-  transform: translateY(-10px) rotate(-45deg);
-  top: 10px;
+
+/* Menu-list (Not styled)*/
+.menu-list {
+	display: none;
 }
+
+.menu-toggleInput:checked + .menu-toggleLabel + .menu-list {
+	display: block;
+}
+
 
 
 /* scroll bar  */
