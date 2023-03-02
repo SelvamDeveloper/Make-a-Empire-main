@@ -111,6 +111,7 @@ nav .menu ul li{
 }
 .row-1{
     display: flex;
+    flex-wrap: wrap;
     
 }
 .col-1 img{
