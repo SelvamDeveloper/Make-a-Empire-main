@@ -124,6 +124,9 @@ nav .menu ul li{
     flex-direction: column;
     align-items: end;
 }
+.col-1 .btn{
+    display: flex;
+}
 .col-2{
     flex-basis: 50%;
 }
