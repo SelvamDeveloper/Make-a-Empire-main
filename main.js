@@ -65,3 +65,23 @@ function goBack(){
 
 // menu slider js 
 
+var menuIcon = document.querySelector(".menu-icon");
+var menu = document.querySelector(".menu");
+var menuList=document.getElementById("menulist");
+    
+    menu.style.width="0%";
+
+menuIcon.addEventListener("click", ()=>{
+    if(menu.style.width="0%"){
+        menu.style.width="50%";
+    }
+    else{
+        menu.style.width="0%";
+        
+    }
+})
+
+
+// menuIcon.addEventListener("click", ()=>{
+//     menuList.style.maxWidth="0px";
+// });
