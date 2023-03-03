@@ -122,6 +122,12 @@ nav .menu ul{
     transition: 1s;
 
 }
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .logo{
     display: flex;
     cursor: pointer;
@@ -363,6 +369,21 @@ nav .menu ul li{
 
     .c-1{
         height: 100%;
+    }
+
+    .logo h1{
+        font-size: 25px;
+    }
+    .logo p{
+        font-size: 5px;
+    }
+    
+    .btn{
+        width: 100%;
+    }
+    .row-1 button{
+        font-size: 14px;
+        margin: 30px 10px;
     }
 
 
