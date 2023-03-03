@@ -69,17 +69,16 @@ var menuIcon = document.querySelector(".menu-icon");
 var menu = document.querySelector(".menu");
 var menuList=document.getElementById("menulist");
     
-    menu.style.width="0%";
+    menu.style.maxWidth="0px";
 
-menuIcon.addEventListener("click", ()=>{
-    if(menu.style.width="0%"){
-        menu.style.width="50%";
+function toggle(){
+    if(menu.style.maxWidth == "0px"){
+        menu.style.maxWidth="500px";
     }
     else{
-        menu.style.width="0%";
-        
+        menu.style.maxWidth="0px";
     }
-})
+}
 
 
 // menuIcon.addEventListener("click", ()=>{
