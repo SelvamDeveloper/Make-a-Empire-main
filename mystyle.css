@@ -24,7 +24,7 @@
 	right: 30px;
 	height: 30px;
 	width: 30px;
-	display: block;
+	display: none;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -345,10 +345,15 @@ nav .menu ul li{
         display: block !important;
     }
     .menu ul a li:hover{
+        border-radius: 0;
         margin: 0;
     }
     .menu ul a .active{
         width: 100%;
+        border-radius: 0;
+    }
+    .menu-toggleLabel{
+        display: block;
     }
 
     .row-1{
