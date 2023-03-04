@@ -395,6 +395,7 @@ nav .menu ul li{
     
     .btn{
         width: 100%;
+        justify-content: center;
     }
     .row-1 button{
         font-size: 14px;
@@ -423,7 +424,7 @@ nav .menu ul li{
     
     .box{
         width: 90%;
-        padding: 15px;
+        padding: 20px;
     }
 
 }
