@@ -190,7 +190,7 @@ nav .menu ul li{
 /* conatianer style  */
 
 .container{
-    padding: 25px 8%;
+    padding: 5% 8%;
     position: relative;
 }
 .row-1 h1{
@@ -225,14 +225,14 @@ nav .menu ul li{
     display: flex;
 }
 .col-2{
-    flex-basis: 50%;
+    flex-basis: 55%;
     margin:0 20px;
     padding: 20px;
 }
 
 
 .col-3{
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 
 .col-3 ul li{
@@ -249,7 +249,7 @@ nav .menu ul li{
     margin: 0 auto;
 }
 .col-3 ul li{
-    width: 180px;
+    width: 100%;
     padding: 15px;
     font-size: 18px;
     transition: 0.5s;
