@@ -337,7 +337,7 @@ nav .menu ul li{
     }
 
     .menu{
-        position: absolute;
+        position: fixed;
         top: 0; 
         left: 0;
         width: 60%;
@@ -386,5 +386,22 @@ nav .menu ul li{
         margin: 30px 10px;
     }
 
+
+    .col-3 hr{
+        width: 100%;
+    }
+    .col-3 ul li{
+        width: 100%;
+    }
+    .col-3 ul{
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    
+    .box{
+        width: 90%;
+        padding: 15px;
+    }
 
 }
