@@ -6,9 +6,14 @@
     list-style: none;
     box-sizing: border-box;
     color: white;
+
 }
 
 
+body{
+    background-color: #f3f3f3;
+
+}
 
 /* menu icon style  */
 
@@ -202,6 +207,10 @@ nav .menu ul li{
     display: flex;
     
 }
+.col-1,.col-2,.col-3{
+    background-color: white;
+    box-shadow: 0 0 12px #0000002b;
+}
 .col-1 img{
     width: 100%;
     margin: auto;
@@ -217,6 +226,8 @@ nav .menu ul li{
 }
 .col-2{
     flex-basis: 50%;
+    margin:0 20px;
+    padding: 20px;
 }
 
 
@@ -232,7 +243,6 @@ nav .menu ul li{
 .col-3{
     text-align: center;
     width: 100%;
-    margin: 0 auto;
 }
 .col-3 hr{
     width: 80%;
@@ -265,6 +275,8 @@ nav .menu ul li{
 }
 .row-1 button:hover{
     background-color: #00ffff ;
+    box-shadow: 8px 8px 11px #00e4fba1;
+    transform: translateY(-10px);
 }
 .row-1 button:hover a{
     color: #252525;
@@ -298,6 +310,7 @@ nav .menu ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(4px);
 
 
 }
@@ -316,6 +329,7 @@ nav .menu ul li{
     border-radius: 25px;
     padding: 8px;
     cursor: pointer;
+    border: none;
 }
 .box{
     background-color: #ffff;
@@ -329,7 +343,7 @@ nav .menu ul li{
 
 /* responsive design  */
 
-@media (max-width:700px) {
+@media (max-width:1007px) {
     
 
     nav{
@@ -338,7 +352,7 @@ nav .menu ul li{
 
     .menu{
         position: fixed;
-        top: 0; 
+        top: 87px; 
         left: 0;
         width: 60%;
         height: 100%;
@@ -388,6 +402,13 @@ nav .menu ul li{
     }
 
 
+    .col-2{
+        margin: 20px 0;
+    }
+
+    .col-3{
+        padding: 20px;
+    }
     .col-3 hr{
         width: 100%;
     }
@@ -396,7 +417,7 @@ nav .menu ul li{
     }
     .col-3 ul{
         text-align: left;
-        margin-top: 20px;
+        
     }
 
     
