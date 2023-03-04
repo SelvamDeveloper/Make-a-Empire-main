@@ -67,21 +67,17 @@ function goBack(){
 
 var menuIcon = document.querySelector(".menu-icon");
 var menu = document.querySelector(".menu");
-var menuList=document.getElementById("menulist");
+var menuList=document.getElementById("menuList");
     
-    menu.style.width="0%";
+    menu.style.maxHeight="0%";
 
-menuIcon.addEventListener("click", ()=>{
-    if(menu.style.width="0%"){
-        menu.style.width="50%";
+function toggle(){
+    if(menu.style.maxHeight == "0%")
+    {
+        menu.style.maxHeight="100%";
     }
-    else{
-        menu.style.width="0%";
-        
+    else
+    {
+        menu.style.maxHeight="0%";
     }
-})
-
-
-// menuIcon.addEventListener("click", ()=>{
-//     menuList.style.maxWidth="0px";
-// });
+};

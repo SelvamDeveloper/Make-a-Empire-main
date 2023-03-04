@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -25,11 +24,11 @@
             </a>
             <div class="menu-icon">
                 <input type="checkbox" class="menu-toggleInput" id="menu-toggle">
-                <label class="menu-toggleLabel" for="menu-toggle">
+                <label onclick="toggle()" class="menu-toggleLabel" for="menu-toggle">
                     <div class="menu-toggleBar"></div>
                 </label>
             </div>
-            <div class="menu" id="menuList">
+            <div class="menu">
                 <ul>
                     <a href="https://www.youtube.com/@MakeAempire"><li class="active">Check Channel</li></a>
                     <a href="books.html"><li>books</li></a>
