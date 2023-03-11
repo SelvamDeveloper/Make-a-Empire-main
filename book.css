@@ -285,7 +285,6 @@ a{
         height: 100%;
         background-color: #201b1b87;
         z-index: 11111;
-        overflow: hidden;
         transition: 0.5s;
         backdrop-filter: blur(3px);
     }

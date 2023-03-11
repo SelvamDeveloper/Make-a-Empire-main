@@ -65,21 +65,22 @@ function goBack(){
 
 // menu slider js 
 
-var menuIcon = document.querySelector(".menu-icon");
-var menu = document.querySelector(".menu");
-var menuList=document.getElementById("menuList");
-    
-    menu.style.maxHeight="0%";
+
+let menu = document.querySelector(".menu");
+
+    menu.style.transform = "translate(-100%)";
 
 function toggle(){
-    if(menu.style.maxHeight == "0%")
+    if(menu.style.transform == "translate(0%)")
     {
-        menu.style.maxHeight="100%";
+        menu.style.transform = "translate(-100%)";
     }
-    else
-    {
-        menu.style.maxHeight="0%";
+   
+    else{
+        menu.style.transform = "translate(0%)";
+        
     }
+    
 };
 
 
