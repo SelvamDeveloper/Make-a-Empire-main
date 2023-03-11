@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    color: #252525;
+    color: #ffff;
 }
 
 body{
@@ -25,7 +25,7 @@ body{
 	right: 30px;
 	height: 30px;
 	width: 30px;
-	display: none;
+	display: block;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -104,22 +104,24 @@ body{
     background-color: #252525;
     border-radius: 10px;
 }
-.main-contant{
-    height: 100%;
-}
+
 /* navbar style  */
 
 nav{
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 100%;
     padding: 15px 5%;
-    background-color:#252525;
+    background-color:#000000;
     display: flex;
     justify-content: space-between;
     z-index: 111;
 }
 nav .menu ul{
+    height: 100%;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -132,7 +134,6 @@ nav .menu ul{
     justify-content: center;
     align-items: center;
 }
-
 .logo{
     display: flex;
     cursor: pointer;
@@ -148,7 +149,6 @@ nav .menu ul{
     font-size: 8px;
     letter-spacing: 5px;
     margin-top: -4px;
-    color: #ffff;
 }
 nav img{
     width: 58px;
@@ -159,35 +159,40 @@ nav .menu{
 }
 nav .menu ul a{
     margin: 0 10px;
-    color: white;
+    font-size: 20px;
 
 }
 nav .menu ul li{
-    transition: 1s;
-    color: #ffff;
+    transition: .5s;
     width: 100%;
     padding: 8px;
     border-radius: 25px;
 }
+.menu {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000f0;
+    z-index: 11111;
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+}
 .menu ul a .active{
-    background-color: rgb(255, 255, 255);
     padding: 8px;
-    width: 150px;
+    width: 100%;
     border-radius: 25px;
-    color: #252525;
+    color: #00ffff;
 }
 .menu ul a .active:hover{
     margin: 0;
-    width: 150px;
-    color: white;
+    color: #ffff;
     
 }
 
 .menu ul a li:hover{
-    color: #252525;
-    margin: 0 10px;
-    width: 100%;
-    background-color:  #00ffff;
+    color: #00ffff;
 }
 
 
@@ -197,7 +202,7 @@ nav .menu ul li{
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 20px 8%;
 }
 .books img{
@@ -277,13 +282,13 @@ a{
         flex-direction: column;
     }
 
-    .menu{
+    .menu {
         position: fixed;
-        top: 0; 
+        top: 88px;
         left: 0;
         width: 60%;
         height: 100%;
-        background-color: #201b1b87;
+        background-color: #000000f0;
         z-index: 11111;
         transition: 0.5s;
         backdrop-filter: blur(3px);

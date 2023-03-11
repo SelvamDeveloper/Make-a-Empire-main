@@ -29,7 +29,7 @@ body{
 	right: 30px;
 	height: 30px;
 	width: 30px;
-	display: none;
+	display: block;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -112,6 +112,8 @@ body{
 /* navbar style  */
 
 nav{
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 100%;
     padding: 15px 5%;
@@ -121,7 +123,9 @@ nav{
     z-index: 111;
 }
 nav .menu ul{
+    height: 100%;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -159,33 +163,40 @@ nav .menu{
 }
 nav .menu ul a{
     margin: 0 10px;
+    font-size: 20px;
 
 }
 nav .menu ul li{
-    transition: 1s;
+    transition: .5s;
     width: 100%;
     padding: 8px;
     border-radius: 25px;
 }
+.menu {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000f0;
+    z-index: 11111;
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+}
 .menu ul a .active{
-    background-color: rgb(255, 255, 255);
     padding: 8px;
-    width: 150px;
+    width: 100%;
     border-radius: 25px;
-    color: #252525;
+    color: #00ffff;
 }
 .menu ul a .active:hover{
     margin: 0;
-    width: 150px;
-    color: white;
+    color: #ffff;
     
 }
 
 .menu ul a li:hover{
-    color: #252525;
-    margin: 0 10px;
-    width: 100%;
-    background-color:  #00ffff;
+    color: #00ffff;
 }
 
 /* conatianer style  */
@@ -351,16 +362,17 @@ nav .menu ul li{
         flex-direction: column;
     }
 
-    .menu{
+    .menu {
         position: fixed;
-        top: 0; 
+        top: 88px;
         left: 0;
         width: 60%;
         height: 100%;
-        background-color: #201b1b87;
+        background-color: #000000f0;
         z-index: 11111;
         transition: 0.5s;
         backdrop-filter: blur(3px);
+        transform: translateX(-100%);
     }
     .menu ul{
         display: block !important;

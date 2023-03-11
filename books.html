@@ -113,22 +113,25 @@
 
     <!-- script section  -->
 
-    <script src="main.js"></script>
+    <script src="book.js"></script>
     <script>
-var menu = document.querySelector(".menu");
-            
-    menu.style.maxHeight="0%";
+let menu = document.querySelector(".menu");
+
+menu.style.transform = "translate(-100%)";
 
 function toggle(){
-    if(menu.style.maxHeight == "0%")
-    {
-        menu.style.maxHeight="100%";
-    }
-    else
-    {
-        menu.style.maxHeight="0%";
-    }
+if(menu.style.transform == "translate(0%)")
+{
+    menu.style.transform = "translate(-100%)";
+}
+
+else{
+    menu.style.transform = "translate(0%)";
+    
+}
+
 };
+
     </script>
 </body>
 </html>
