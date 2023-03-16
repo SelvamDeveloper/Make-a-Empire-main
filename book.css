@@ -11,7 +11,18 @@
 body{
     background-color: #f3f3f3;
 }
-/* menu icon style  */
+/*  wave style  */
+.wave-1{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.wave-2{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+
+}
 
 /* // .menu-toggleInput */
 .menu-toggleInput {
@@ -183,7 +194,7 @@ nav .menu ul li{
     padding: 8px;
     width: 100%;
     border-radius: 25px;
-    color: #00ffff;
+    color: #6e31ff;
 }
 .menu ul a .active:hover{
     margin: 0;
@@ -202,17 +213,16 @@ nav .menu ul li{
 
 .container{
     width: 100%;
-    height: 100vh;
-    padding: 20px 8%;
+    height: 100%;
+    padding: 20px 5%;
 }
 .books img{
     width: 100%;
 }
 .books{
-    height: 400px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
 }
 .book-1{
     display: flex;
@@ -226,7 +236,7 @@ nav .menu ul li{
 .book-1 h1{
     font-size: 20px;
     font-weight: 400;
-    margin-left: 33px;
+    color: #000;
 
 }
 .books button{
@@ -240,30 +250,29 @@ nav .menu ul li{
     transition: 0.5s;
 }
 .book-1 button:hover{
-    background-color: #00ffff;
-    box-shadow: 8px 8px 11px #00e4fba1;
+    background-color: #6e31ff;
+    box-shadow: 8px 8px 11px #8454f5;
     transform: translateY(-10px);
 }
 a{
     color: #ffff;
 }
-.book-1 button:hover a{
-    color: #252525;
-}
 .btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
 .btn .fa-solid{
+    color:#252525;
     font-size: 30px;
     margin-top: 20px;
     transition: 0.5s;
 }
 .btn .fa-solid:hover{
+    color: #6e31ff;
     transform: translateY(-10px);
+
 }
 
 /* responsive design  */

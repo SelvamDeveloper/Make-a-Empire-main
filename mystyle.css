@@ -15,7 +15,17 @@ body{
 
 }
 
-/* menu icon style  */
+/*  wave style  */
+.wave-1{
+    position: absolute;
+    top: 0;
+}
+.wave-2{
+    position: fixed;
+    bottom: 0;
+}
+
+
 
 /* // .menu-toggleInput */
 .menu-toggleInput {
@@ -146,6 +156,7 @@ nav .menu ul{
     font-size: 30px;
     margin: 0;
     color: #ffff;
+    width: 100%;
 }
 .logo p{
     text-transform: uppercase;
@@ -153,6 +164,7 @@ nav .menu ul{
     font-size: 8px;
     letter-spacing: 5px;
     margin-top: -4px;
+    width: 100%;
 }
 nav img{
     width: 58px;
@@ -187,7 +199,7 @@ nav .menu ul li{
     padding: 8px;
     width: 100%;
     border-radius: 25px;
-    color: #00ffff;
+    color: #6e31ff;
 }
 .menu ul a .active:hover{
     margin: 0;
@@ -198,12 +210,61 @@ nav .menu ul li{
 .menu ul a li:hover{
     color: #00ffff;
 }
+/* icon  */
+
+.link{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    height: 400px;
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 12px #0000002b;
+    border-radius: 0px 25px 25px 0px;
+}
+.link .icon{
+    color: #252525;
+    margin: auto;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.5s;
+    border-radius: 50%;
+
+
+}
+.icon:nth-child(1):hover {
+    color: #FF0000;
+}
+.icon:nth-child(2):hover {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.icon:nth-child(3):hover {
+    color: white;
+    background:#00ff44;
+}
+.icon:nth-child(4):hover {
+    color: white;
+    background:#ff0000;
+}
+.icon:nth-child(5):hover {
+    color: white;
+    background:#5d00ff;
+}
+
 
 /* conatianer style  */
 
 .container{
-    padding: 5% 8%;
+    padding: 5% 0%;
     position: relative;
+    width: 80%;
+    margin: auto 5% auto 10%;
 }
 .row-1 h1{
     color: #252525;
@@ -227,24 +288,44 @@ nav .menu ul li{
     width: 100%;
     margin: auto;
 }
+.col-1 h1, p{
+    width: 92%;
+    text-align: left;
+    padding-right: 10px;
+}
 .col-1{
-    flex-basis: 25%;
+    flex-basis: 28%;
     display: flex;
     flex-direction: column;
     align-items: end;
+    border-radius: 30px 0 ;
 }
 .col-1 .btn{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.col-1 .btn {
+    color: #fff;
+}
+.col-1 .download{
+    color: #f06901;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 .col-2{
     flex-basis: 55%;
     margin:0 20px;
     padding: 20px;
+    border-radius: 30px;
 }
 
 
 .col-3{
     flex-basis: 20%;
+    border-radius: 0 30px;
 }
 
 .col-3 ul li{
@@ -276,22 +357,21 @@ nav .menu ul li{
 
 .row-1 button{
     font-size: 17px;
-    border-radius: 10px;
+    border-radius: 25px;
     outline: none;
     border: none;
     padding: 12px;
-    width: 150px;
     background-color: #252525;
-    margin: 30px;
+    margin: 15px 20px 20px 20px;
     transition: 0.5s;
 }
 .row-1 button:hover{
-    background-color: #00ffff ;
-    box-shadow: 8px 8px 11px #00e4fba1;
+    background-color: #6e31ff;
+    box-shadow: 8px 8px 11px #8454f5;
     transform: translateY(-10px);
 }
 .row-1 button:hover a{
-    color: #252525;
+    color: #ffffff;
 }
 
 /* chapter-box  */
@@ -439,4 +519,11 @@ nav .menu ul li{
         padding: 20px;
     }
 
+    .link{
+        padding: 0;
+        height: 280px;
+    }
+    .link .icon{
+        font-size: 15px;
+    }
 }
