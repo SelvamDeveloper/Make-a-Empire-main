@@ -263,8 +263,7 @@ nav .menu ul li{
 .container{
     padding: 5% 0%;
     position: relative;
-    width: 80%;
-    margin: auto 5% auto 10%;
+    width: 100%;
 }
 .row-1 h1{
     color: #252525;
@@ -278,6 +277,8 @@ nav .menu ul li{
 }
 .row-1{
     display: flex;
+    width: 80%;
+    margin: auto;
     
 }
 .col-1,.col-2,.col-3{
@@ -409,6 +410,7 @@ nav .menu ul li{
 .box p,h1{
     color: #252525;
     margin-bottom: 25px;
+    width: 100%;
 }
 .box ul li{
     color: #252525;
